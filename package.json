@@ -4,15 +4,16 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "pnpm build"
   },
-  "dependencies": {
-    "@tahjholden/hos-core": "^0.1.0",
-    "@tahjholden/hos-rcp": "^0.1.0"
-  },
+  "dependencies": {},
   "optionalDependencies": {
     "@tahjholden/hos-mcp": "^0.1.0",
     "@tahjholden/hos-memory": "^0.1.0"
@@ -20,7 +21,12 @@
   "devDependencies": {
     "typescript": "^5.1.6"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/tahjholden/adapter-basketball.git" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tahjholden/adapter-basketball.git"
+  }
 }
