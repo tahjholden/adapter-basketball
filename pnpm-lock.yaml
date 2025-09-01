@@ -7,18 +7,61 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@tahjholden/hos-core':
+        specifier: ^0.1.0
+        version: 0.1.0
+      '@tahjholden/hos-rcp':
+        specifier: ^0.1.0
+        version: 0.1.0
     devDependencies:
       typescript:
         specifier: ^5.1.6
         version: 5.9.2
+    optionalDependencies:
+      '@tahjholden/hos-mcp':
+        specifier: ^0.1.0
+        version: 0.1.0
+      '@tahjholden/hos-memory':
+        specifier: ^0.1.0
+        version: 0.1.0
 
 packages:
+
+  '@tahjholden/hos-core@0.1.0':
+    resolution: {integrity: sha512-EmPXAwWGNzjeixp5PxzvpY4geZmXiUWwv7fod5iH5/BT7hGDu628NpJG21X+3hPPSKszkRhBeV/j/s7oAHn7nA==, tarball: https://npm.pkg.github.com/download/@tahjholden/hos-core/0.1.0/976ba19a1d79ef44e5db3889034ff33fe3d0f447}
+
+  '@tahjholden/hos-mcp@0.1.0':
+    resolution: {integrity: sha512-gLtNePULxm02HCwJmOtuseQscp9MRvrv8SH7gZphr9Hpm+ObIDXQqKEJ/icAC5j2cjHQj/BxUSD42wkR4wkuFw==, tarball: https://npm.pkg.github.com/download/@tahjholden/hos-mcp/0.1.0/18da40b57969422227b0cb87d554f558f59f8278}
+
+  '@tahjholden/hos-memory@0.1.0':
+    resolution: {integrity: sha512-uy0DizPWts7i+S7KwHs3oWGN/+uG2lop7k314c0iFw/HDO9yxQdBVVAWC1HYeBKCKwZywBBTeJhkXB3/bXMtgQ==, tarball: https://npm.pkg.github.com/download/@tahjholden/hos-memory/0.1.0/8d9538b01d9dbac590b72d4aa9f0320abd0db7ea}
+
+  '@tahjholden/hos-rcp@0.1.0':
+    resolution: {integrity: sha512-+0Vv9mVoLG3IKkSEVFHBzukwU5SPayu1KutcUzCnJ8auUgPfwN4enJii0aJkP/UQiLrIy7LrrYV00EQ0eu81wA==, tarball: https://npm.pkg.github.com/download/@tahjholden/hos-rcp/0.1.0/8731daf3f5c6491edbc2abc9a43b1eca467a4285}
 
   typescript@5.9.2:
     resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
+  zod@4.1.5:
+    resolution: {integrity: sha512-rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg==}
+
 snapshots:
 
+  '@tahjholden/hos-core@0.1.0':
+    dependencies:
+      zod: 4.1.5
+
+  '@tahjholden/hos-mcp@0.1.0':
+    optional: true
+
+  '@tahjholden/hos-memory@0.1.0':
+    optional: true
+
+  '@tahjholden/hos-rcp@0.1.0': {}
+
   typescript@5.9.2: {}
+
+  zod@4.1.5: {}
