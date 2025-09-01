@@ -1,5 +1,5 @@
 {
-  "name": "@maxpotential/adapter-basketball",
+  "name": "@tahjholden/adapter-basketball",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -13,7 +13,10 @@
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "pnpm build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@tahjholden/hos-core": "^0.1.0",
+    "@tahjholden/hos-rcp": "^0.1.0"
+  },
   "optionalDependencies": {
     "@tahjholden/hos-mcp": "^0.1.0",
     "@tahjholden/hos-memory": "^0.1.0"
@@ -22,7 +25,7 @@
     "typescript": "^5.1.6"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@tahjholden"
   },
   "license": "MIT",
   "repository": {
